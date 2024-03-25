@@ -12,7 +12,7 @@
         <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
         <VersionPrefix>$(AssemblyVersion)</VersionPrefix>
         <Title>$(AssemblyName)</Title>
-        <Description>The most flexible logger on earth</Description>
+        <Description></Description>
         <PackageId>$(AssemblyName)</PackageId>
         <PackageProjectUrl>https://github.com/skukshaus/Bootstrapper</PackageProjectUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>

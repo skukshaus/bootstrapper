@@ -1,7 +1,9 @@
 global using System;
+global using System.Collections.Generic;
 global using Bogus;
 global using FluentAssertions;
 global using FluentAssertions.Execution;
+global using Ksh.Bootstrapper.Abstractions;
 global using Moq;
 global using Xunit;
 global using Xunit.Abstractions;

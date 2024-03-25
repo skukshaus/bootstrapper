@@ -2,4 +2,6 @@
 
 public interface IBootstrapper
 {
+    void ActivateAll();
+    void DeactivateAll();
 }

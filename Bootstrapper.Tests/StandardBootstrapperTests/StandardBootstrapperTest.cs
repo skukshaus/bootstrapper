@@ -1,12 +1,30 @@
 namespace Ksh.Bootstrapper.Tests.StandardBootstrapperTests;
 
-public class StandardBootstrapperTest : IDisposable
+public partial class StandardBootstrapperTest
 {
     private StandardBootstrapper _systemUnderTest;
 
+    private Mock<IActivatable> _activator1Mock= new();
+    private Mock<IActivatable> _activator2Mock= new();
+
+    private Mock<IDeactivatable> _deactivator1Mock= new();
+    private Mock<IDeactivatable> _deactivator2Mock = new();
+    
     public StandardBootstrapperTest()
     {
-        _systemUnderTest = new();
+        var activators = new List<IActivatable>
+        {
+            _activator1Mock.Object,
+            _activator2Mock.Object
+        };
+
+        var deactivators = new List<IDeactivatable>
+        {
+            _deactivator1Mock.Object,
+            _deactivator2Mock.Object
+        };
+
+        _systemUnderTest = new(activators, deactivators);
     }
 
     [Fact] public void AfterInitialisationInstanceIsNotNull()
@@ -19,21 +37,5 @@ public class StandardBootstrapperTest : IDisposable
         using var _ = new AssertionScope();
 
         _systemUnderTest.Should().NotBeNull();
-    }
-
-    ~StandardBootstrapperTest()
-    {
-        ReleaseUnmanagedResources();
-    }
-
-    private void ReleaseUnmanagedResources()
-    {
-        // TODO release managed resources here
-    }
-
-    public void Dispose()
-    {
-        ReleaseUnmanagedResources();
-        GC.SuppressFinalize(this);
     }
 }
