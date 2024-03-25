@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootstrapper", "Bootstrapper\Bootstrapper.csproj", "{99DE8603-1F89-41AF-9CE7-FC19595222B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootstrapper.Abstractions", "Bootstrapper.Abstractions\Bootstrapper.Abstractions.csproj", "{AE13BF7E-1F71-45DC-B433-7ABACC1698F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootstrapper.Tests", "Bootstrapper.Tests\Bootstrapper.Tests.csproj", "{7B6A98C4-0060-41DB-90BA-646FED027960}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99DE8603-1F89-41AF-9CE7-FC19595222B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99DE8603-1F89-41AF-9CE7-FC19595222B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99DE8603-1F89-41AF-9CE7-FC19595222B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99DE8603-1F89-41AF-9CE7-FC19595222B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE13BF7E-1F71-45DC-B433-7ABACC1698F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE13BF7E-1F71-45DC-B433-7ABACC1698F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE13BF7E-1F71-45DC-B433-7ABACC1698F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE13BF7E-1F71-45DC-B433-7ABACC1698F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B6A98C4-0060-41DB-90BA-646FED027960}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B6A98C4-0060-41DB-90BA-646FED027960}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B6A98C4-0060-41DB-90BA-646FED027960}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B6A98C4-0060-41DB-90BA-646FED027960}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
